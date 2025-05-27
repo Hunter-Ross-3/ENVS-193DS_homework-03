@@ -19,13 +19,13 @@ library(readxl)
 my_data <- read.csv(here("data/my_data.csv"))
 ```
 
-## Problem 1. Personal data
+# Problem 1. Personal data
 
-# a. Data summarizing
+## a. Data summarizing
 
 I calculated the Mean amount of money I spent on campus per day of the week. This summary allows me to compare how my spending varies depending on the day because on days that I'm on campus longer I expect to have higher spending. 
 
-# b.Visualization
+## b.Visualization
 
 
 
@@ -45,36 +45,42 @@ ggplot(my_data, aes(x= day, y= spent)) +
     labs(
     title = "Money Spent on Campus by Day",
     x = "Day of the Week",
-    y = "Money Spent ($)"
-  ) +
+    y = "Money Spent ($)") +
   # customizing the theme
   theme_minimal(base_size = 4) +
-  theme(axis.text.x= element_text(angle = 45, hjust = 1))
+  theme( )
 ```
 
-# c. Caption
+## c. Caption
 
-# d. Table presentation
+Figure 1. Each point shows how much money I spent on campus each day. Red dots make the average for each day. I tend to spend more mid-week, especially on Thursday. 
 
-## Problem 2. Affective visualization
+## d. Table presentation
 
-# a. Describe in words what an affective visualization could look like for your personal data
+```{r}
 
-# b. Sketch (on paper)
+```
 
-# c. Visualization draft
 
-# d. Artistic statement
+# Problem 2. Affective visualization
 
-## Problem 3. Statistical critique
+## a. Describe in words what an affective visualization could look like for your personal data
 
-# a. Revisit and summarize
+## b. Sketch (on paper)
 
-# b. Visual clarity
+## c. Visualization draft
 
-# c. Aesthetic clarity
+## d. Artistic statement
 
-# d. Recommendations
+# Problem 3. Statistical critique
+
+## a. Revisit and summarize
+
+## b. Visual clarity
+
+## c. Aesthetic clarity
+
+## d. Recommendations
 
 
 
