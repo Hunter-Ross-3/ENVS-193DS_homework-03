@@ -1,0 +1,59 @@
+---
+title: "Homework 3"
+format: html
+---
+
+https://github.com/Hunter-Ross-3/ENVS-193DS_homework-03.git
+
+
+
+```{r -read in packages & data}
+#| message: false
+#loading packages
+library(tidyverse)
+library(janitor)
+library(here)
+library(gtable)
+library(readxl)
+#loading data
+my_data <- read.csv(here("data/my_data.csv"))
+```
+
+## Problem 1. Personal data
+
+# a. Data summarizing
+
+I calculated the Mean amount of money I spent on campus per day of the week. This summary allows me to compare how my spending varies depending on the day because on days that I'm on campus longer I expect to have higher spending. 
+
+# b.Visualization
+
+# c. Caption
+
+# d. Table presentation
+
+## Problem 2. Affective visualization
+
+# a. Describe in words what an affective visualization could look like for your personal data
+
+# b. Sketch (on paper)
+
+# c. Visualization draft
+
+# d. Artistic statement
+
+## Problem 3. Statistical critique
+
+# a. Revisit and summarize
+
+# b. Visual clarity
+
+# c. Aesthetic clarity
+
+# d. Recommendations
+
+
+
+
+
+
+
