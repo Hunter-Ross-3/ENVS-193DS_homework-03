@@ -13,7 +13,7 @@ https://github.com/Hunter-Ross-3/ENVS-193DS_homework-03.git
 library(tidyverse)
 library(janitor)
 library(here)
-library(gtable)
+library(flextable)
 library(readxl)
 #loading data
 my_data <- read.csv(here("data/my_data.csv"))
@@ -27,20 +27,17 @@ I calculated the Mean amount of money I spent on campus per day of the week. Thi
 
 ## b.Visualization
 
-
-
 ```{r}
-#summarizing the mean spending by each day
-
+#summarizing the mean spending by each day and naming it summary_data
 summary_data <- my_data |> 
   group_by(day) |> 
   summarise(mean_spent = mean(spent, na.rm = TRUE))
 
-#ploting data
+#plotting data
 ggplot(my_data, aes(x= day, y= spent)) +
  #making a jitter plot
-   geom_jitter(width = 0.2, alpha = 0.6, color = "steelblue") + 
-  stat_summary(fun = mean, geom = "point", size = 4, color= "darkred") +
+   geom_jitter(width = 0.2, alpha = 0.6, color = "steelblue") + #adding specific width color and alpha to the jitterplot
+  stat_summary(fun = mean, geom = "point", size = 4, color= "darkred") +#adding the mean into the jitter plot as the color red
 #adding title of graph and axis
     labs(
     title = "Money Spent on Campus by Day",
@@ -48,7 +45,12 @@ ggplot(my_data, aes(x= day, y= spent)) +
     y = "Money Spent ($)") +
   # customizing the theme
   theme_minimal(base_size = 4) +
-  theme( )
+  theme(axis.title.x = element_text(size =14)) +
+  theme(axis.text.x = element_text(size =10)) +
+  theme(axis.title.y = element_text(size =14)) +
+  theme(axis.text.y =  element_text(size =10)) +
+  theme(title = element_text(size =14)) 
+
 ```
 
 ## c. Caption
@@ -58,7 +60,13 @@ Figure 1. Each point shows how much money I spent on campus each day. Red dots m
 ## d. Table presentation
 
 ```{r}
-
+#creating a flextable
+summary_data |> #using the summay data
+  rename('Day of Week' = day,#renaming day to day of the week 
+         'Mean Spending($)'= mean_spent) |> #renaming mean_spent to mean spending 
+  flextable() |> 
+  autofit() |> 
+  set_caption("Table 1. Average money spent on campus by weekday.") #creating a caption for the table
 ```
 
 
