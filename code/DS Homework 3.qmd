@@ -100,8 +100,8 @@ ggplot(my_data, aes(x = day, y = spent, fill = day)) + #using my original data n
   coord_polar() + #changing the bar graph to circle 
   theme_void() + #theme
   scale_fill_viridis_d() +
-  labs(title = "Spending Spiral: Money Spent by Day")# title 
-  theme(title = element_text(size =14))#changing the size of title
+  labs(title = "Spending Spiral: Money Spent by Day") +# title 
+  theme(title = element_text(size =14))# changing the size of title
 
 ```
 
@@ -117,7 +117,8 @@ ggplot(my_data, aes(x = day, y = spent, fill = day)) + #using my original data n
 
 ## a. Revisit and summarize
 
-They did a regression with the plant-pollinator asynchrony against the year. The predictor variable is the indication that species shoe response diversity or differential changes th their asunchrony with apple bloom over time.
+They did a regression with the plant-pollinator asynchrony against the year. The predictor variable is the indication that species shoe response diversity or differential changes of their asunchrony with apple bloom over time.This allowed them to test whether biodiversity stabilizes synchrony despite climate change.
+
 
 ```{r}
 grid.raster(readPNG(here("Stat_test.png")))
@@ -132,7 +133,7 @@ grid.raster(readPNG(here("Stat_test_caption.png")))
 
 ## b. Visual clarity
 
-
+Figure 3 clearly displays the distribution of bee activity relative to peak apple bloom, using a boxplot format with a reference line for bloom bate. The x-axis groups bees by genus, and the y-axis shows the number of days relative to the bloom, making it easy to compare phonological timing. The visual format effectively communicates which genera are most synchronized. 
 
 ## c. Aesthetic clarity
 
