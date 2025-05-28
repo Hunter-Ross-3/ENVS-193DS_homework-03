@@ -141,9 +141,4 @@ The figure minimizes clutter by grouping bees by genus and using proportional bo
 
 ## d. Recommendations
 
-
-
-
-
-
-
+To improve Figure 3, I would suggest labeling the vertical reference line directly as "Apple Peak Bloom" to eliminate any change of confusion. It would also help to add color to differentiate genera, it would also make it more engaging and accessible. Including sample size per genus next to the genus lables would provide context for the boxpolt widths. Additionally, sorting genera by bedian asynchrony instead of alphabetically might better highlight difference in synchrony. These changes would enhance both the interpretability and visual appeal of the figure. 
