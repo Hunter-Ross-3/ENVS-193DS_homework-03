@@ -74,11 +74,12 @@ summary_data |> #using the summay data
 
 ## a. Describe in words what an affective visualization could look like for your personal data
 
-An affective visualization of this data could be a "spending spire," where each day is a ring in a circular calendar. The thicness of the ring would reflect how much i spent. It would also show how spending builds over time and could bring in the emotional daya into my daily habits. 
+An affective visualization of this data could be a "spending spire," where each day is a ring in a circular calendar. The thickness of the ring would reflect how much i spent. It would also show how spending builds over time and could bring in the emotional data into my daily habits. 
 
 ## b. Sketch 
 
-insert image 
+![Sketch](sketch.png)
+
 
 ## c. Visualization draft
 
