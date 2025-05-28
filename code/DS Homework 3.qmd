@@ -1,7 +1,7 @@
 ---
 title: "Homework 3"
-authour: Hunter Ross
-date: 5/28/2025
+authour: "Hunter Ross"
+date: "5/28/2025"
 format: html
 ---
 
@@ -35,7 +35,7 @@ I calculated the Mean amount of money I spent on campus per day of the week. Thi
 #summarizing the mean spending by each day and naming it summary_data
 summary_data <- my_data |> 
   group_by(day) |> 
-  summarise(mean_spent = mean(spent, na.rm = TRUE))
+  summarise(mean_spent = mean(spent, na.rm = TRUE)) #getting mean of data
 
 #plotting data
 ggplot(my_data, aes(x= day, y= spent)) +
@@ -65,7 +65,7 @@ Figure 1. Each point shows how much money I spent on campus each day. Red dots m
 
 ```{r}
 #creating a flextable
-summary_data |> #using the summay data
+summary_data |> #using the summary data
   rename('Day of Week' = day,#renaming day to day of the week 
          'Mean Spending($)'= mean_spent) |> #renaming mean_spent to mean spending 
   flextable() |> 
@@ -107,6 +107,7 @@ ggplot(my_data, aes(x = day, y = spent, fill = day)) + #using my original data n
 
 
 ## d. Artistic statement
+
   -Content: This represents my daily spending as slices of a circle to visualize both emotional and routine-driven behavior. 
   -Influence: The circle graphs I’ve encountered in my professors' lectures and various articles have been a major source of inspiration for me. I find them to be an elegant and straightforward way to present information, combining clarity with visual appeal. 
   -Form: I plan to create my final circle graph in R using ggplot and using geom_bar with coord_polar to achieve the smooth circular visualization. I'll enhance the visual appeal by making sure to choose a nice color scheme, making clear labels, and ensuring an intuitive layout that interpreters the data both engaging and easy to 
@@ -116,7 +117,22 @@ ggplot(my_data, aes(x = day, y = spent, fill = day)) + #using my original data n
 
 ## a. Revisit and summarize
 
+They did a regression with the plant-pollinator asynchrony against the year. The predictor variable is the indication that species shoe response diversity or differential changes th their asunchrony with apple bloom over time.
+
+```{r}
+grid.raster(readPNG(here("Stat_test.png")))
+```
+
+
+```{r}
+
+grid.raster(readPNG(here("Stat_test_caption.png")))
+```
+
+
 ## b. Visual clarity
+
+
 
 ## c. Aesthetic clarity
 
