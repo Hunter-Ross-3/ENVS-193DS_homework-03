@@ -96,6 +96,7 @@ ggplot(my_data, aes(x = day, y = spent, fill = day)) +
   theme_void() +
   scale_fill_viridis_d() +
   labs(title = "Spending Spiral: Money Spent by Day")
+  theme(title = element_text(size =14))
 
 ```
 
