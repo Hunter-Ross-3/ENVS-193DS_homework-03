@@ -101,6 +101,10 @@ ggplot(my_data, aes(x = day, y = spent, fill = day)) +
 
 
 ## d. Artistic statement
+  -Content: This represents my daily spending as slices of a circle to visualize both emotional and routine-driven behavior. 
+  -Influence: The circle graphs I’ve encountered in my professors' lectures and various articles have been a major source of inspiration for me. I find them to be an elegant and straightforward way to present information, combining clarity with visual appeal. 
+  -Form: I plan to create my final circle graph in R using ggplot and using geom_bar with coord_polar to achieve the smooth circular visualization. I'll enhance the visual appeal by making sure to choose a nice color scheme, making clear labels, and ensuring an intuitive layout that interpreters the data both engaging and easy to 
+  -Process: To make my ruff draft I started my calculating daily averages And then sketched the spiral. I used R coors_polar to test the visual structure and see the default colors. 
 
 # Problem 3. Statistical critique
 
