@@ -137,6 +137,8 @@ Figure 3 clearly displays the distribution of bee activity relative to peak appl
 
 ## c. Aesthetic clarity
 
+The figure minimizes clutter by grouping bees by genus and using proportional boxplot widths. The central line for peak bloom and the dashed window for the ± 25-day interaction period are clear and informative. Overall, the design in clean and emphasizes the data without being distracting. 
+
 ## d. Recommendations
 
 
