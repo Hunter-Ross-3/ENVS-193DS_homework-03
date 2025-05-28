@@ -15,6 +15,8 @@ library(janitor)
 library(here)
 library(flextable)
 library(readxl)
+library(png) 
+library(grid) 
 #loading data
 my_data <- read.csv(here("data/my_data.csv"))
 ```
@@ -78,7 +80,10 @@ An affective visualization of this data could be a "spending spire," where each 
 
 ## b. Sketch 
 
-![Sketch](sketch.png)
+
+```{r}
+grid.raster(readPNG(here("sketch.png")))
+```
 
 
 ## c. Visualization draft
