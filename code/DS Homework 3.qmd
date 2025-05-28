@@ -82,6 +82,18 @@ insert image
 
 ## c. Visualization draft
 
+```{r}
+# Basic ring plot (conceptual)
+ggplot(my_data, aes(x = day, y = spent, fill = day)) +
+  geom_bar(stat = "identity", position = "dodge", show.legend = FALSE) +
+  coord_polar() +
+  theme_void() +
+  scale_fill_viridis_d() +
+  labs(title = "Spending Spiral: Money Spent by Day")
+
+```
+
+
 ## d. Artistic statement
 
 # Problem 3. Statistical critique
