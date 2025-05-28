@@ -1,5 +1,7 @@
 ---
 title: "Homework 3"
+authour: Hunter Ross
+date: 5/28/2025
 format: html
 ---
 
@@ -52,7 +54,7 @@ ggplot(my_data, aes(x= day, y= spent)) +
   theme(axis.title.y = element_text(size =14)) +
   theme(axis.text.y =  element_text(size =10)) +
   theme(title = element_text(size =14)) 
-
+#changing the text size individually for all titles 
 ```
 
 ## c. Caption
@@ -83,20 +85,23 @@ An affective visualization of this data could be a "spending spire," where each 
 
 ```{r}
 grid.raster(readPNG(here("sketch.png")))
+#the only way me and the DREAM lab could figure out how to get an image to actually show up
 ```
 
 
 ## c. Visualization draft
 
 ```{r}
-# Basic ring plot (conceptual)
-ggplot(my_data, aes(x = day, y = spent, fill = day)) +
-  geom_bar(stat = "identity", position = "dodge", show.legend = FALSE) +
-  coord_polar() +
-  theme_void() +
+# creating cicle graph
+ggplot(my_data, aes(x = day, y = spent, fill = day)) + #using my original data not summary data
+  geom_bar(stat = "identity", position = 
+             "dodge", show.legend = FALSE) +
+  #creating a base bar graph
+  coord_polar() + #changing the bar graph to circle 
+  theme_void() + #theme
   scale_fill_viridis_d() +
-  labs(title = "Spending Spiral: Money Spent by Day")
-  theme(title = element_text(size =14))
+  labs(title = "Spending Spiral: Money Spent by Day")# title 
+  theme(title = element_text(size =14))#changing the size of title
 
 ```
 
